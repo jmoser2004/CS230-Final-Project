@@ -31,7 +31,7 @@ class HashTable
             for(int i = 0; i < (int)hashMe.length(); i++)
             {
                 result += hashMe[i];
-                result = pow(result, hashMe[i] % 5);
+                result = pow(result, hashMe[i] % 2) + 1;
                 result %= TABLE_SIZE;
             }
             //actual algorithm ends here

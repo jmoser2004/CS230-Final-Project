@@ -57,7 +57,7 @@ class HashTable
                 temp->setNext(insertMe);
                 insertMe->setPrev(temp);
 
-                return false;
+                return true;
             }
 
             return false;
